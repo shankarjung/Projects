@@ -1,0 +1,137 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: Century Gothic;
+}
+ 
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("22.jpg");
+	height:100vh;
+	background-size:cover;
+	background-position: center;
+}
+
+ul{
+	list-style-type: none;
+	float: right;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a{
+	background-color: #39b7dd;
+	color: #000;
+}
+
+.logo img{
+	float: left;
+	width: 80px;
+	height: 80px;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+ 
+.wrapper{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	padding: 0 20px;
+	text-decoration: none;
+	transition: 0.6s ease-in-out;
+}
+ 
+.contact-form{
+	display: flex;
+	max-width: 550px;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.8);
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+ 
+.input-fields{
+	display: flex;
+	flex-direction: column;
+	margin-right: 4%;
+}
+ 
+.input-fields,
+.msg{
+	width: 48%;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+ 
+.input-fields .input,
+.msg textarea{
+	margin: 10px 0;
+	background: transparent;
+	border: 0px;
+	border-bottom: 2px solid #c5ecfd;
+	padding: 10px;
+	color: #c5ecfd;
+	width: 100%;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+ 
+.msg textarea{
+	height: 212px;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+ 
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+	color: #c5ecfd;
+}
+ 
+.btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+ 
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}

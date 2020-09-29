@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>ShankarJung: Homepage</title>
+		<link rel="icon" type="image/gif/png" href="llogo.png">
+		<link href= "css/script.css" rel= "stylesheet" type= "text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Cyrus Shrestha">
+        <meta name="keywords" content="ShankarJung">    
+</head>
+
+<body>
+        <header>
+		
+			<div class= "main">
+				<div class= "logo">
+				<a href="homepage.html">
+					<img src="llogo.png" alt="ShankarJung" >
+				</a>
+				</div>
+				
+				<ul>
+					<li class= "active"><a href="homepage.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			
+			<div class= "title">
+				<h3>Hi! I'm</h3>
+				<h1>ShankarJung..<h1>
+			</div>
+			
+			<div class= "button">
+				<a href= "javascript:showhide('works')"  class="btn" >MY WORKS</a>
+			</div>
+			
+			
+			<div id= "works" style="display:none">
+				<div class="headerr">
+					<h1>Capture the Moment</h1>
+					<p>Here, I present you some glipse of my collections. Capture the moment is weekly updated.</p>
+				</div>
+	
+				<div class="row"> 
+					<div class="column">
+						<img src="works\girl1.jpg" style="width:100%">
+						<img src="works\flora.jpg" style="width:100%">
+					</div>
+			
+					<div class="column">
+						<img src="works\ring.jpg" style="width:100%">
+						<img src="works\lego.jpg" style="width:100%">
+						<img src="works\scene1.jpg" style="width:100%">
+					</div> 
+			
+					<div class="column">
+						<img src="works\lamp.jpg" style="width:100%">
+						<img src="works\cafe.jpg" style="width:100%">
+					</div>
+			
+					<div class="column">
+						<img src="works\scene2.jpg" style="width:100%">
+						<img src="works\waterfall.jpg" style="width:100%">
+						<img src="works\bus.jpg" style="width:100%">
+					</div>
+				</div>
+		
+			</div>
+			
+			<script>
+			
+			function showhide(id) {
+			var e = document.getElementById(id);
+			e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+			window.scrollTo(0, 800);
+			}			
+
+			window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			  }
+			}	
+			
+			function topFunction() {
+  			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			} 	
+			
+			</script>
+		</header>
+		
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+</body>
+</html>
+	

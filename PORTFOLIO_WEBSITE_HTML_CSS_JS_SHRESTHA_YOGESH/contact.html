@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ShankarJung: Contact</title>
+	<link rel="icon" type="image/gif/png" href="logo.png">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class= "main">
+		<div class= "logo">
+			<a href="homepage.html">
+					<img src="llogo.png" alt="ShankarJung" >
+				</a>
+		</div>
+				
+			<ul>
+				<li><a href="homepage.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li class= "active"><a href="contact.html">Contact</a></li>
+			</ul>
+	</div>
+
+	<div class="wrapper">
+		<div class="contact-form">
+				<div class="input-fields">
+				<form name="My_form" onsubmit="return validateForm()">
+					<input type="text" class="input" name="Name" placeholder="Name">
+					<input type="text" class="input" name="Email" placeholder="Email">
+					<input type="text" class="input" name="Phone" placeholder="Phone">
+					<input type="text" class="input" name="Subject" placeholder="Subject">
+				</div>
+				
+				<div class="msg">
+					<textarea name="Message" placeholder="Message"></textarea>
+				<div class="btn">
+					<input type="submit">
+				</div>
+				</div>
+				</form>
+		</div>
+	</div>
+	
+	<script>
+    function validateForm() {
+        var x = document.forms["My_form"]["Name"].value;
+        var y = document.forms["My_form"]["Email"].value;
+        var z= document.forms["My_form"]["Phone"].value;
+        var a= document.forms["My_form"]["Subject"].value;
+		var b= document.forms["My_form"]["Message"].value;
+        if (x == ""){
+            alert("Please do not leave any text feild empty");
+            return false;
+        }
+        else if (y==""){
+            alert("Please do not leave any text feild empty");
+            return false;
+        }
+        else if(z==""){
+            alert("Please do not leave any text feild empty");
+            return false;
+        }
+        else if(a==""){
+            alert("Pleaswe leave a message as well.")
+        }
+		else if(b==""){
+            alert("Pleaswe leave a message as well.")
+        }
+        else{
+            alert("Your form has been submitted.");
+            return false;
+        }
+}
+    </script>
+	
+	
+	<div class="footer" style="position: absolute; top: 845px; background-color: rgba(0, 0, 0, 0.5); height: 130px; width: 100%; color: white; text-align: center;">
+    <br><br>
+        <p>&nbsp;SHRESTHA, Yogesh</p>    
+
+</div>
+
+</body>
+</html>
