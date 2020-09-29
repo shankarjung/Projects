@@ -1,0 +1,260 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #fff;
+	color: #c1c1c1;
+	font-family: 'Rubik', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+	background: url("img/12.png");
+	background-size: cover;
+}
+ 
+.container {
+	padding: 3rem 12rem;
+}
+
+.navbar {
+	display: flex;
+	color: #ff3c88;
+}
+
+.logo {
+	flex: 2;
+}
+
+.logo img {
+	height: 50px;
+	width: 150px;
+	margin-top: -20px;
+	cursor: pointer;
+}
+.menu {
+	flex: 1;
+	color: #fff;
+	font-size: 15px;
+}
+
+.menu > ul {
+	display: flex;
+	list-style: none;
+}
+
+.menu > ul > li {
+	padding: 0rem 1rem;
+}
+
+.menu > ul > li >:hover{
+	color: #919191;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu .btn {
+	background-color: #ff3c88;
+	padding: 0.5rem;
+	border-radius: 2px;
+}
+
+.menu button {
+	width: 60px;
+	transform: translate(270px, -10px);
+	height: 35px;
+	border: none;
+	border-radius: 2px;
+	background-color: #ff3c88;
+	color: #fff;
+	cursor: pointer;
+	
+}
+
+.main-content {
+	display: flex;
+}
+
+.text {
+	flex: 1;
+	padding-top: 10rem;
+}
+
+.banner {
+	flex: 1;
+	padding-top: 5rem;
+}
+
+.banner-img {
+	height: 100%;
+	width :100%;
+}
+
+h1 {
+	font-size: 4rem;
+	color: #fff;
+	font-weight: medium;
+}
+
+.btn-rounded {
+	padding: 0.7rem;
+	background-color: #ff3c88;
+	border-radius: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#link {
+	color: #ff3c88;
+	text-decoration: underline;
+	margin-left: 1rem;
+	font-size: 15px;
+}
+
+
+.main-content .text form {
+	float: left;
+	padding-top: 15px;
+}
+
+.main-content .text form input {
+	float: left;
+	width: 140px;
+	height: 40px;
+	padding: 0px 10px;
+	margin-right: 10px;
+	border: none;
+	background-color: #fff;
+	font-size: 14px;
+	color: #111;
+	line-height: 30px;
+}
+
+.main-content .text form button {
+	float: left;
+	width: 60px;
+	height: 40px;
+	margin-right: 10px;
+	border: none;
+	background-color: #19d7f8;
+	font-size: 14px;
+	color: #111;
+	cursor: pointer;
+}
+
+.main-content form button:hover {
+	background-color: #ccc;
+}
+
+.user-panel {
+	text-align: center;
+}
+
+
+/*Signup Form*/
+
+.signup-container {
+	display: flex;
+	padding-top: 50px;
+}
+
+.left-image {
+	flex: 1;
+	padding-top: 2rem;
+}
+
+.right-form {
+	flex: 1;
+	padding-top: 2rem;
+	background: #fff;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.right-form > h2 {
+	text-align: center;
+	color: #111;
+}
+
+.right-form > p {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	color: #ff3c88;
+}
+
+.right-form .mem-already {
+	text-align: center;
+}
+
+.signup-form {
+	width: 400px;
+	margin: 0px auto;
+	padding-top: 10px; 
+}
+
+.signup-form input {
+	width: 90%;
+	height: 40px;
+	padding: 0px 5%;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	font-family: arial;
+	font-size: 16px;
+	color: #111;
+	line-height: 40px;
+}
+
+.signup-form button {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 40px;
+	border: none;
+	border-radius: 50px;
+	background-color: #ff3c88;
+	font-family: arial;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.signup-form button:hover {
+	background-color: #ccc;
+	color: #000;
+}
+
+.mem-already{
+	text-align: center;
+	padding: 15px;
+}
+
+.mem-already > p {
+	font-size: 15px;
+	color: #111;
+}
+
+.mem-already .green {
+	color: green;
+	font-size: 17px;
+}
+
+.mem-already .green:hover {
+	color: grey;
+}
+
