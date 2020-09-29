@@ -34,9 +34,6 @@
 						else {
 							echo '<ul>
 									<li><a href="index.php">HOME</a></li>
-									<li><a href="">SERVICES</a></li>
-									<li><a href="">ABOUT</a></li>
-									<li><a href="">CONTACT</a></li>
 									<li><a href="signup.php" class="btn">Sign&nbsp;Up</a></li>
 								</ul>';
 						}
